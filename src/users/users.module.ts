@@ -6,7 +6,7 @@ import { UsersService } from './services/users/users.service';
 import { Repository } from 'typeorm';
 // import { AuthService } from './services/auth/auth/auth.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { User } from 'src/typeorm/entities/userEntity';
+import { User } from 'src/typeorm/user-entities/userEntity';
 
 
 @Module({

@@ -1,6 +1,7 @@
 import { IsEmail, IsNotEmpty } from "class-validator"
+import Role from "src/enum/role.enum"
 
-export class CreateUserDto{
+export class CreateAdminDto{
     @IsNotEmpty()
     name:string
     @IsEmail()
@@ -14,4 +15,10 @@ export class CreateUserDto{
 
     @IsNotEmpty()
     password:string
+
+
+    role:[]
+    
+
+
 }

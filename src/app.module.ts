@@ -3,9 +3,10 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { UsersModule } from './users/users.module';
-import { User } from './typeorm/entities/userEntity';
+import { User } from './typeorm/user-entities/userEntity';
 import { AuthModule } from './auth/auth.module';
 import { typeOrmConfig } from './config/typeorm.config';
+import { AdminModule } from './admin/admin.module';
 
 
 @Module({
@@ -14,6 +15,7 @@ import { typeOrmConfig } from './config/typeorm.config';
 
     UsersModule,
     AuthModule,
+    AdminModule,
   
   ],
   controllers: [AppController],

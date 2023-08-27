@@ -1,5 +1,7 @@
 import { TypeOrmModule, TypeOrmModuleOptions } from "@nestjs/typeorm";
-import {User} from 'src/typeorm/entities/userEntity'
+import { Admin } from "src/typeorm/admin-entities/admin";
+import { Cat } from "src/typeorm/admin-entities/category";
+import {User} from 'src/typeorm/user-entities/userEntity'
 
 
 export const typeOrmConfig:TypeOrmModuleOptions={
@@ -9,7 +11,7 @@ export const typeOrmConfig:TypeOrmModuleOptions={
       username: "root",
       password: "",
       database: "cathayapi",
-      entities: [User],
+      entities: [User,Admin,Cat],
       synchronize: true
 }
 
